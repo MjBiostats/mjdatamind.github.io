@@ -1,5 +1,5 @@
 # About 
-I am @MJBiostats, dedicated to advancing healthcare through the application of biostatistics and data science. 
+I am dedicated to advancing healthcare through the application of biostatistics and data science. 
 My professional focus blends analytical precision with strategic insight, ensuring impactful, data-driven research that addresses complex healthcare challenges and minimizes disparities.
 
 My background in research coordination, coupled with a deepening expertise in biostatistics, allows me to approach each project with a refined analytical perspective. I am committed to fostering innovation and clarity in clinical research through a thoughtful, evidence-based approach.
