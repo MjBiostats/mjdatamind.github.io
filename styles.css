@@ -1,0 +1,58 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Soft gray background for a clean look */
+}
+
+/* Tab container */
+.tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff; /* White background for the tab bar */
+    border-bottom: 1px solid #ddd; /* Light gray border for elegance */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Tab buttons */
+.tab-button {
+    background-color: #ffffff; /* White background for the buttons */
+    border: none;
+    border-bottom: 2px solid transparent; /* Border for active tab effect */
+    color: #333; /* Dark gray text for readability */
+    padding: 14px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: border-bottom 0.3s, color 0.3s;
+}
+
+.tab-button:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.tab-button.active {
+    border-bottom: 2px solid #007bff; /* Highlight the active tab */
+    color: #007bff;
+}
+
+/* Tab content */
+.tab-content {
+    padding: 20px;
+    background-color: #ffffff; /* White background for content */
+    border-top: 1px solid #ddd; /* Light gray border for separation */
+    margin: 0 auto;
+    max-width: 800px; /* Centered content with max width */
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 0;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555; /* Slightly lighter gray for text */
+}
