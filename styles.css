@@ -3,33 +3,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Elegant and clean font */
 }
 
 /* Banner Styling */
 .banner {
-    background: url('your-banner-image.jpg') no-repeat center center;
+    background: url('your-luxury-banner-image.jpg') no-repeat center center;
     background-size: cover;
-    color: white;
+    color: #fff; /* White text for high contrast */
     text-align: center;
-    padding: 100px 20px;
+    padding: 150px 20px; /* Ample padding for a luxurious feel */
+    font-family: 'Georgia', serif; /* Adds a touch of sophistication */
 }
 
 .banner h1 {
-    font-size: 2.5em;
+    font-size: 3em;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
 .banner p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: 300;
+    letter-spacing: 1px; /* Adds a refined touch */
 }
 
 /* Navigation Bar Styling */
 nav {
-    background-color: #333;
+    background-color: #333; /* Dark color for a luxurious look */
     color: white;
-    padding: 10px 20px;
+    padding: 15px 20px;
     text-align: center;
 }
 
@@ -41,27 +44,40 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.2em;
+    font-weight: 400;
+    text-transform: uppercase; /* Adds a refined touch */
 }
 
 nav ul li a:hover {
     text-decoration: underline;
+    color: #ddd; /* Slightly lighter color on hover */
 }
 
 /* Section Styling */
 section {
-    padding: 20px;
-    margin: 20px;
+    padding: 60px 20px;
+    margin: 0 auto;
+    max-width: 1200px; /* Centered and restricted width for a sophisticated look */
 }
 
 section h2 {
-    margin-bottom: 10px;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333; /* Dark color for text */
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666; /* Subtle color for text */
 }
 
 /* Footer Styling */
@@ -69,6 +85,7 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     font-size: 0.9em;
+    letter-spacing: 1px; /* Adds a refined touch */
 }
