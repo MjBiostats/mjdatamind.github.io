@@ -10,24 +10,26 @@
 .banner {
     background: url('your-luxury-banner-image.jpg') no-repeat center center;
     background-size: cover;
-    color: #fff; 
+    color: #fff;
     text-align: center;
-    padding: 60px 20px; /* Adjust padding */
+    padding: 80px 20px; /* Adjust padding for better spacing */
     font-family: 'Georgia', serif;
     position: relative; /* Ensure content is positioned correctly */
-    height: 400px; /* Set a specific height for the banner */
+    height: 300px; /* Set a specific height for the banner */
 }
 
 .banner h1 {
     font-size: 2.5em;
-    margin-bottom: 10px;
-    padding-top: 20px; /* Adjust top padding to position the title */
+    margin: 0; /* Remove margin to avoid extra space */
+    padding: 0; /* Remove padding */
+    line-height: 1.2; /* Adjust line-height for better spacing */
 }
 
 .banner p {
     font-size: 1.2em;
     font-weight: 300;
     letter-spacing: 1px;
+    margin-top: 10px; /* Add space between title and subtitle */
 }
 
 /* Navigation Bar Styling */
@@ -43,6 +45,7 @@ nav ul {
     display: flex;
     justify-content: center;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
