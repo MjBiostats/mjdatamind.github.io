@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif; /* Choose a clean, elegant font */
+    font-family: Arial, sans-serif;
 }
 
 /* Banner Styling */
@@ -13,28 +13,21 @@
     color: white;
     text-align: center;
     padding: 100px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .banner h1 {
-    font-size: 3em;
-    font-weight: bold;
+    font-size: 2.5em;
     margin-bottom: 10px;
-    color: #f4f4f4; /* Light color for contrast */
 }
 
 .banner p {
-    font-size: 1.5em;
-    font-weight: 300; /* Light weight for a more elegant look */
-    color: #f4f4f4; /* Light color for contrast */
+    font-size: 1.2em;
+    font-weight: 300;
 }
 
 /* Navigation Bar Styling */
 nav {
-    background-color: #333; /* Dark background for contrast */
+    background-color: #333;
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -42,7 +35,8 @@ nav {
 
 nav ul {
     list-style: none;
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
     padding: 0;
 }
 
@@ -58,6 +52,16 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+section h2 {
+    margin-bottom: 10px;
 }
 
 /* Footer Styling */
