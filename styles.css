@@ -90,6 +90,7 @@ section p {
     font-size: 1.2em;
     line-height: 1.6;
     color: #666;
+    margin-bottom: 20px; /* Adjust this value to increase or decrease the spacing between paragraphs */
 }
 
 /* Footer Styling */
