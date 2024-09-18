@@ -12,24 +12,24 @@
     background-size: cover;
     color: #fff;
     text-align: center;
-    padding: 80px 20px; /* Adjust padding for better spacing */
+    padding: 60px 20px; /* Adjust padding */
     font-family: 'Georgia', serif;
     position: relative; /* Ensure content is positioned correctly */
     height: 300px; /* Set a specific height for the banner */
+    margin: 0; /* Ensure no extra margin */
 }
 
 .banner h1 {
     font-size: 2.5em;
-    margin: 0; /* Remove margin to avoid extra space */
+    margin: 0; /* Remove margin */
     padding: 0; /* Remove padding */
-    line-height: 1.2; /* Adjust line-height for better spacing */
 }
 
 .banner p {
     font-size: 1.2em;
     font-weight: 300;
     letter-spacing: 1px;
-    margin-top: 10px; /* Add space between title and subtitle */
+    margin-top: 10px; /* Adjust margin */
 }
 
 /* Navigation Bar Styling */
