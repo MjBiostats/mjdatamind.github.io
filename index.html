@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Default font */
 }
 
 /* Banner Styling */
@@ -12,38 +12,41 @@
     background-size: cover;
     color: #fff;
     text-align: center;
-    padding: 80px 20px; /* Adjust as needed */
-    font-family: 'Playfair Display', serif;
-    height: 400px; /* Adjust height */
+    padding: 80px 20px;
+    font-family: 'Playfair Display', serif; /* Elegant font for headings */
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adds depth to the text */
 }
 
 .banner h1 {
-    font-size: 3.5em; /* Larger font size for prominence */
+    font-size: 3.5em; /* Large, prominent heading */
     margin-bottom: 10px;
     font-weight: 700;
-    font-family: 'Playfair Display', serif; /* Elegant serif font */
-    color: #fff; /* White color for contrast */
+    font-family: 'Playfair Display', serif; /* Luxury serif font for title */
+    color: #fff;
 }
 
 .banner p {
     font-size: 1.5em;
     font-weight: 400;
     margin-top: 10px;
-    font-family: 'Montserrat', sans-serif; /* Clean sans-serif font */
-    color: #f5f5f5; /* Slightly off-white for readability */
+    font-family: 'Montserrat', sans-serif; /* Clean sans-serif font for subtitle */
+    color: #f5f5f5; /* Soft white for contrast */
 }
 
 /* Navigation Bar Styling */
 nav {
-    background-color: #333;
+    background-color: #222; /* Darker, more elegant */
     color: white;
     padding: 15px 0;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Keep navbar fixed on scroll */
 }
 
 nav ul {
@@ -55,7 +58,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 30px; /* Wider spacing for more sophisticated look */
 }
 
 nav ul li a {
@@ -64,10 +67,11 @@ nav ul li a {
     font-size: 1.2em;
     font-weight: 600;
     text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif; /* Keeping it clean and modern */
 }
 
 nav ul li a:hover {
-    color: #ddd;
+    color: #bbb; /* Subtle hover effect */
 }
 
 /* Section Styling */
@@ -75,6 +79,7 @@ section {
     padding: 60px 20px;
     margin: 0 auto;
     max-width: 1200px;
+    font-family: 'Montserrat', sans-serif; /* Uniform, clean text style */
 }
 
 section h2 {
@@ -82,23 +87,40 @@ section h2 {
     margin-bottom: 20px;
     font-weight: 700;
     color: #333;
+    font-family: 'Playfair Display', serif; /* Elegant font for headings */
     border-bottom: 2px solid #333;
     padding-bottom: 10px;
 }
 
 section p {
     font-size: 1.2em;
-    line-height: 1.6;
+    line-height: 1.8; /* More breathing room between lines */
     color: #666;
-    margin-bottom: 20px; /* Adjust this value to increase or decrease the spacing between paragraphs */
+    margin-bottom: 20px;
 }
 
 /* Footer Styling */
 footer {
-    background-color: #333;
+    background-color: #222; /* Consistent dark background */
     color: white;
     text-align: center;
     padding: 20px 0;
     font-size: 0.9em;
     letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif; /* Clean footer text */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2.5em; /* Scale down for smaller screens */
+    }
+
+    .banner p {
+        font-size: 1.2em; /* Adjust subtitle size */
+    }
+
+    nav ul li {
+        margin: 0 15px; /* Narrow spacing for smaller screens */
+    }
 }
