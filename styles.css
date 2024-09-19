@@ -1,67 +1,101 @@
-/* Basic Reset */
-* {
+/* General styling */
+body {
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Libre Baskerville', serif; /* Applying Libre Baskerville globally */
+    color: #333;
+    background-color: #f9f9f9;
 }
 
-/* Banner Styling */
+/* Banner styling */
 .banner {
-    background: url('your-luxury-banner-image.jpg') no-repeat center center;
-    background-size: cover;
-    color: #fff;
     text-align: center;
-    padding: 80px 20px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 50px 20px;
+    background-color: #f2f2f2;
+    color: #333;
 }
 
 .banner h1 {
-    font-size: 3.5em; /* Main title in Libre Baskerville italic */
-    font-weight: 400;
-    font-style: italic;
-    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
 .banner p {
     font-size: 1.5em;
-    color: #f5f5f5;
+    color: #666;
 }
 
-/* Section Styling */
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Gold hover effect */
+}
+
+/* Section styling */
 section {
-    padding: 60px 20px;
+    padding: 50px 20px;
+    max-width: 1000px;
     margin: 0 auto;
-    max-width: 1200px;
 }
 
-section h2 {
+h2 {
+    font-family: 'Playfair Display', serif;
     font-size: 2.5em;
-    font-weight: 700; /* Secondary titles in bold */
-    text-transform: uppercase;
-    margin-bottom: 20px;
     color: #333;
+    margin-bottom: 20px;
 }
 
+/* Paragraph spacing */
 section p {
     font-size: 1.2em;
-    line-height: 1.8;
+    line-height: 1.6;
     color: #666;
     margin-bottom: 20px;
 }
 
-/* Footer Styling */
+/* Footer styling */
 footer {
-    background-color: #333;
-    color: white;
     text-align: center;
-    padding: 20px 0;
-    font-size: 0.9em;
-    letter-spacing: 1px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
 }
 
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
 
+/* Responsive design */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2.5em;
+    }
+
+    .banner p {
+        font-size: 1.2em;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
