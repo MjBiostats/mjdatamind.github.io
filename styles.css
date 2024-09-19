@@ -1,55 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MJ Biostat's Github Page</title>
-   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="banner">
-            <h1>MJ Biostat's GitHub Page</h1>
-            <p>Biostatistics & Data Science | Shaping the Future of Clinical Research</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif; /* Applying Libre Baskerville globally */
+}
 
-    <section id="about">
-        <h2>About</h2>
-    <p>I am dedicated to advancing healthcare through the application of biostatistics and data science. My professional focus blends analytical precision with strategic insight, ensuring impactful, data-driven research that addresses complex healthcare challenges and minimizes disparities.</p>
+/* Banner Styling */
+.banner {
+    background: url('your-luxury-banner-image.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-    <p>My interdisciplinary background allows me to approach each project with a refined analytical perspective. I am committed to fostering innovation and clarity in clinical research through a thoughtful, evidence-based approach.</p>
+.banner h1 {
+    font-size: 3.5em; /* Main title in Libre Baskerville italic */
+    font-weight: 400;
+    font-style: italic;
+    color: #fff;
+}
 
-    <p>Beyond my professional pursuits, I am passionate about exploring new languages and immersing myself in diverse cultures through art and gastronomy. These interests cultivate a broader perspective, enriching my analytical work and strategic vision.</p>
+.banner p {
+    font-size: 1.5em;
+    color: #f5f5f5;
+}
 
-    <p>I seek connections with those who value precision, insight, and a forward-thinking approach to healthcare. Let's connect where shared purpose and innovation meet.</p>
-</section>
-       
-    <section id="projects">
-        <h2>Projects</h2>
-        <p> Under Construction.</p>
-    </section>
+/* Section Styling */
+section {
+    padding: 60px 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:mary.jacobs@ucsf.edu">mary [dot] jacobs [at] ucsf [dot] edu</a><br>
-           Twitter: <a href="https://twitter.com/mjbiostat" target="_blank">@MJBiostat</a><br>
-           GitHub: <a href="https://github.com/MJBiostats" target="_blank">MJBiostats</a><br>
-           CV: <a href="cv.html.pdf" target="_blank">Download PDF</a>
-        </p>
-    </section>
+section h2 {
+    font-size: 2.5em;
+    font-weight: 700; /* Secondary titles in bold */
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #333;
+}
 
-    <footer>
-        <p>&copy; 2024 MJ Biostats</p>
-    </footer>
-</body>
-</html>
+section p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
 
