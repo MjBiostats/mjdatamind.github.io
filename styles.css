@@ -183,24 +183,93 @@ footer p {
     color: #b8860b;
 }
 
-@media (max-width: 768px) {
+/* Enhanced Responsive Design */
+@media (max-width: 1200px) {
+    .banner h1 {
+        font-size: 4.5em;
+    }
+    .banner p {
+        font-size: 1.8em;
+    }
+    section {
+        padding: 100px 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .banner {
+        height: 600px;
+        padding: 150px 20px;
+    }
     .banner h1 {
         font-size: 4em;
     }
-
     .banner p {
         font-size: 1.6em;
     }
+    nav ul li {
+        margin: 0 20px;
+    }
+    section h2 {
+        font-size: 3em;
+    }
+}
 
+@media (max-width: 768px) {
+    .banner {
+        height: 500px;
+        padding: 100px 20px;
+    }
+    .banner h1 {
+        font-size: 3.5em;
+    }
+    .banner p {
+        font-size: 1.4em;
+    }
+    nav {
+        padding: 15px 0;
+    }
     nav ul {
         flex-direction: column;
     }
-
     nav ul li {
-        margin: 15px 0;
+        margin: 10px 0;
     }
-
+    section {
+        padding: 80px 20px;
+    }
     section h2 {
+        font-size: 2.8em;
+    }
+    section p {
+        font-size: 1.2em;
+        line-height: 1.8;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner {
+        height: 400px;
+        padding: 80px 15px;
+    }
+    .banner h1 {
         font-size: 3em;
+    }
+    .banner p {
+        font-size: 1.2em;
+    }
+    section {
+        padding: 60px 15px;
+    }
+    section h2 {
+        font-size: 2.5em;
+    }
+    section p {
+        font-size: 1.1em;
+        line-height: 1.7;
+    }
+    .button {
+        padding: 12px 30px;
+        font-size: 0.9em;
     }
 }
