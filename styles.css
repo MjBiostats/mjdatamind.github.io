@@ -134,13 +134,17 @@ nav ul li a:hover {
 #contact {
     padding: 50px;
     background-color: #fff;
-    text-align: center;
+    text-align: left; /* Changed from center to left */
 }
 
 #contact h2 {
     font-family: 'Aptos', sans-serif; /* Ensured Aptos is used */
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1rem; /* Reduced title size by 50% */
+}
+
+#contact p {
+    margin-left: 20px; /* Indented content to the left */
 }
 
 /* Footer */
@@ -150,3 +154,4 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
