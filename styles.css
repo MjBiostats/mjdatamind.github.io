@@ -78,7 +78,7 @@ nav ul li a:hover {
 }
 
 .image-left img, .image-right img {
-    width: 100%;
+    width: 50%;
     height: auto;
     margin: 10px;
 }
@@ -96,7 +96,7 @@ nav ul li a:hover {
 }
 
 .image-left img {
-    animation: moveUpDown 4s ease-in-out infinite;
+    animation: moveUpDown 10s ease-in-out infinite;
 }
 
 .image-right img {
