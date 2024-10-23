@@ -22,6 +22,11 @@ header {
     text-transform: uppercase;
 }
 
+.divider {
+    border-top: 1px solid gray; /* Thin gray line */
+    margin: 10px 0; /* Space around the divider */
+}
+
 .banner nav ul {
     list-style-type: none;
     padding: 0;
