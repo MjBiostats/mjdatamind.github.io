@@ -1,121 +1,151 @@
-/* General Reset */
-* {
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Aptos', sans-serif; /* Set default font */
-    line-height: 1.6;
+    background-color: #f4f4f4;
     color: #333;
 }
 
-/* Header */
-header {
+/* Banner Styling */
+.banner {
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
 }
 
 .banner h1 {
-    font-size: 1.6rem; /* 20% smaller than default */
+    font-family: 'Aptos', sans-serif;
+    font-size: 3rem;
     text-transform: uppercase;
+    margin: 0;
 }
 
-.divider {
-    border-top: 1px solid gray; /* Thin gray line */
-    margin: 10px 0; /* Space around the divider */
+/* Navigation */
+nav {
+    background-color: #222;
 }
 
-.banner nav ul {
+nav ul {
     list-style-type: none;
+    margin: 0;
     padding: 0;
+    text-align: center;
 }
 
-.banner nav ul li {
-    display: inline;
+nav ul li {
+    display: inline-block;
     margin: 0 15px;
 }
 
-.banner nav ul li a {
+nav ul li a {
+    color: white;
     text-decoration: none;
-    color: black;
-    font-family: 'Aptos', sans-serif; /* Ensure Aptos is used */
-    text-transform: uppercase; /* Navigation links in caps */
-    letter-spacing: 1pt; /* Expanded letter spacing */
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.intro-left {
+    flex: 1;
+    font-family: 'Aptos', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.intro-right {
+    flex: 1;
+    position: relative;
+}
+
+.image-collage {
+    display: flex;
+}
+
+.image-left, .image-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-left img, .image-right img {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+.image-right img:nth-child(2) {
+    position: relative;
+    top: 30px;
+}
+
+/* Animation for Image Collage */
+@keyframes moveUpDown {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.image-left img {
+    animation: moveUpDown 4s ease-in-out infinite;
+}
+
+.image-right img {
+    animation: moveUpDown 6s ease-in-out infinite;
 }
 
 /* About Section */
 #about {
     padding: 50px;
-    background-color: #f4f4f4;
+    background-color: #fff;
     text-align: center;
+}
+
+#about h2 {
+    font-family: 'Aptos', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
 }
 
 /* Projects Section */
 #projects {
     padding: 50px;
-    color: white; /* Set text color to white */
+    background-color: #f4f4f4;
     text-align: center;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: add a semi-transparent background */
-    display: flex; /* Flexbox for layout */
-    align-items: center; /* Center vertically */
 }
 
-/* Project content */
-.projects-content {
-    flex: 1; /* Allow content to grow */
-    margin-right: 20px; /* Space between content and carousel */
-}
-
-/* Title Styling */
 #projects h2 {
-    font-family: 'Aptos', sans-serif; /* Ensure Aptos is used */
+    font-family: 'Aptos', sans-serif;
     text-transform: uppercase;
-    font-size: 2rem; /* Title in white */
-}
-
-/* See More Button */
-.see-more-box {
-    display: inline-block;
-    background-color: white; /* White background for the box */
-    color: black; /* Text color inside the box */
-    padding: 10px 20px;
-    border-radius: 5px; /* Slight rounding of the box edges */
-    margin-top: 20px; /* Spacing above the box */
-    font-weight: bold; /* Make text bold */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    transition: background-color 0.3s ease; /* Smooth transition */
-}
-
-.see-more-box:hover {
-    background-color: #e0e0e0; /* Slight change on hover */
-}
-
-
-.see-more-box:hover {
-    background-color: #e0e0e0; /* Change color on hover */
+    font-size: 2rem;
 }
 
 /* Contact Section */
 #contact {
     padding: 50px;
-    text-align: left;
+    background-color: #fff;
+    text-align: center;
 }
 
 #contact h2 {
-    font-size: 1.5rem; /* 50% smaller title */
-}
-
-#contact p {
-    text-indent: 20px; /* Indent left */
+    font-family: 'Aptos', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
     background-color: #333;
-    color: white;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
