@@ -128,6 +128,38 @@ nav ul li a:hover {
     text-transform: uppercase;
     font-size: 2rem;
 }
+/* Projects Section */
+#projects {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: add a semi-transparent background */
+    color: white; /* Set text color to white */
+    text-align: center;
+    position: relative;
+}
+
+/* Title Styling */
+#projects h2 {
+    font-family: 'Aptos', sans-serif; /* Ensured Aptos is used */
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+/* See More Button */
+.see-more-box {
+    display: inline-block;
+    background-color: white; /* White background for the box */
+    color: black; /* Text color inside the box */
+    padding: 10px 20px;
+    border-radius: 5px; /* Slight rounding of the box edges */
+    margin-top: 20px; /* Spacing above the box */
+    font-weight: bold; /* Make text bold */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.see-more-box:hover {
+    background-color: #e0e0e0; /* Change color on hover */
+}
 
 /* Contact Section */
 #contact {
