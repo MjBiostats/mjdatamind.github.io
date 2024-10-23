@@ -40,8 +40,9 @@ header {
 .banner nav ul li a {
     text-decoration: none;
     color: black;
-    font-family: 'Aptos', sans-serif; /* Ensured Aptos is used */
+    font-family: 'Aptos', sans-serif; /* Ensure Aptos is used */
     text-transform: uppercase; /* Navigation links in caps */
+    letter-spacing: 1pt; /* Expanded letter spacing */
 }
 
 /* About Section */
@@ -58,11 +59,19 @@ header {
     text-align: center;
     position: relative;
     background-color: rgba(0, 0, 0, 0.5); /* Optional: add a semi-transparent background */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center vertically */
+}
+
+/* Project content */
+.projects-content {
+    flex: 1; /* Allow content to grow */
+    margin-right: 20px; /* Space between content and carousel */
 }
 
 /* Title Styling */
 #projects h2 {
-    font-family: 'Aptos', sans-serif; /* Ensured Aptos is used */
+    font-family: 'Aptos', sans-serif; /* Ensure Aptos is used */
     text-transform: uppercase;
     font-size: 2rem; /* Title in white */
 }
@@ -79,6 +88,11 @@ header {
     cursor: pointer; /* Change cursor to pointer on hover */
     transition: background-color 0.3s ease; /* Smooth transition */
 }
+
+.see-more-box:hover {
+    background-color: #e0e0e0; /* Slight change on hover */
+}
+
 
 .see-more-box:hover {
     background-color: #e0e0e0; /* Change color on hover */
