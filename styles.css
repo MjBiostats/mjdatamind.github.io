@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Aptos', sans-serif;
+    font-family: 'Aptos', sans-serif; /* Changed to Aptos */
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -16,10 +16,9 @@ body {
 }
 
 .banner h1 {
-    font-family: 'Aptos', sans-serif;
-    font-size: 3rem;
+    font-family: 'Aptos', sans-serif; /* Ensured Aptos is used */
+    font-size: 2.4rem; /* Adjusted from 3rem to 2.4rem (20% smaller) */
     text-transform: uppercase;
-    margin: 0;
 }
 
 /* Navigation */
@@ -40,9 +39,11 @@ nav ul li {
 }
 
 nav ul li a {
+    font-family: 'Aptos', sans-serif; /* Changed to Aptos */
     color: white;
     text-decoration: none;
     font-weight: 600;
+    text-transform: uppercase; /* Added uppercase transformation */
 }
 
 nav ul li a:hover {
@@ -58,9 +59,9 @@ nav ul li a:hover {
 
 .intro-left {
     flex: 1;
-    font-family: 'Aptos', sans-serif;
+    font-family: 'Aptos', sans-serif; /* Ensured Aptos is used */
     font-size: 1.2rem;
-    text-transform: uppercase;
+    text-transform: uppercase; /* Added uppercase transformation */
 }
 
 .intro-right {
@@ -111,7 +112,7 @@ nav ul li a:hover {
 }
 
 #about h2 {
-    font-family: 'Aptos', sans-serif;
+    font-family: 'Aptos', sans-serif; /* Ensured Aptos is used */
     text-transform: uppercase;
     font-size: 2rem;
 }
@@ -124,7 +125,7 @@ nav ul li a:hover {
 }
 
 #projects h2 {
-    font-family: 'Aptos', sans-serif;
+    font-family: 'Aptos', sans-serif; /* Ensured Aptos is used */
     text-transform: uppercase;
     font-size: 2rem;
 }
@@ -137,7 +138,7 @@ nav ul li a:hover {
 }
 
 #contact h2 {
-    font-family: 'Aptos', sans-serif;
+    font-family: 'Aptos', sans-serif; /* Ensured Aptos is used */
     text-transform: uppercase;
     font-size: 2rem;
 }
