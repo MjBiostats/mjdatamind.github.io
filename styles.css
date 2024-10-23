@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Aptos', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -78,7 +78,7 @@ nav ul li a:hover {
 }
 
 .image-left img, .image-right img {
-    width: 50%;
+    width: 70%;
     height: auto;
     margin: 10px;
 }
@@ -96,7 +96,7 @@ nav ul li a:hover {
 }
 
 .image-left img {
-    animation: moveUpDown 10s ease-in-out infinite;
+    animation: moveUpDown 4s ease-in-out infinite;
 }
 
 .image-right img {
