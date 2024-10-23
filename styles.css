@@ -120,26 +120,13 @@ nav ul li a:hover {
 #projects {
     padding: 50px;
     background-color: #f4f4f4;
-    text-align: center;
-}
-
-#projects h2 {
-    font-family: 'Aptos', sans-serif;
-    text-transform: uppercase;
-    font-size: 2rem;
-}
-/* Projects Section */
-#projects {
-    padding: 50px;
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: add a semi-transparent background */
     color: white; /* Set text color to white */
     text-align: center;
     position: relative;
 }
-
 /* Title Styling */
 #projects h2 {
-    font-family: 'Aptos', sans-serif; /* Ensured Aptos is used */
+    font-family: 'Aptos', sans-serif;
     text-transform: uppercase;
     font-size: 2rem;
 }
