@@ -1,274 +1,152 @@
-/* Importing Futura font */
-@import url('https://fonts.googleapis.com/css2?family=Futura:wght@400;700&display=swap');
+/* Import Aptos font */
+@font-face {
+    font-family: 'Aptos';
+    src: url('fonts/Aptos-Regular.woff2') format('woff2'),
+         url('fonts/Aptos-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
-* {
+@font-face {
+    font-family: 'Aptos';
+    src: url('fonts/Aptos-Bold.woff2') format('woff2'),
+         url('fonts/Aptos-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* General Styles */
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Futura', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    color: #1a1a1a;
-    background-color: #f8f8f8;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
-.banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('ultra-luxury-banner.jpg') no-repeat center center;
-    background-size: cover;
-    color: #fff;
+/* Header and Navigation */
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
     text-align: center;
-    padding: 200px 20px;
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.banner::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 150px;
-    background: linear-gradient(to top, #f8f8f8, transparent);
 }
 
 .banner h1 {
-    font-size: 5.5em;
-    margin-bottom: 30px;
-    font-family: 'Futura', sans-serif;
-    font-weight: bold;
-    color: #fff;
-    letter-spacing: 3px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-family: 'Aptos', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
 }
 
 .banner p {
-    font-size: 2em;
-    margin-top: 30px;
-    font-family: 'Futura', sans-serif;
-    color: #f5f5f5;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Navigation Menu */
-nav {
-    background-color: rgba(255, 255, 255, 0.98);
-    color: #1a1a1a;
-    padding: 25px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
-    transition: background-color 0.3s ease;
-    border-bottom: 3px solid #d3d3d3;  /* Gray line under the menu */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    margin: 5px 0;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
     padding: 0;
-    margin: 0;
+    margin: 20px 0 0 0;
 }
 
 nav ul li {
-    margin: 0 40px;
+    display: inline-block;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #1a1a1a;
     text-decoration: none;
-    font-size: 1.2em;
-    font-family: 'Futura', sans-serif;
-    font-weight: bold;
-    letter-spacing: 2px;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #b8860b;
-}
-
-section {
-    padding: 150px 20px;
-    margin: 0 auto;
-    max-width: 1400px;
-}
-
-section h2 {
-    font-size: 3.5em;
-    margin-bottom: 40px;
-    font-family: 'Futura', sans-serif;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #1a1a1a;
-    text-align: center;
-    position: relative;
-}
-
-section h2::after {
-    content: '';
-    display: block;
-    width: 120px;
-    height: 3px;
-    background-color: #b8860b;
-    margin: 30px auto 0;
-}
-
-section p {
-    font-size: 1.3em;
-    line-height: 1.9;
-    font-family: 'Futura', sans-serif;
-    letter-spacing: 1px;
     color: #333;
-    margin-bottom: 40px;
-    text-align: justify;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+#about {
+    background-color: #f0f0f0;
+}
+
+#about p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Titles (Headings) */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Aptos', sans-serif; /* Use Aptos for all headings */
+    text-transform: uppercase;        /* Make text uppercase */
+    font-weight: 700;                 /* Bold weight for titles */
+    color: #333;                      /* Consistent heading color */
+}
+
+/* Specific Font Sizes for Titles */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+}
+
+h5, h6 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Projects Section */
+#projects p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Contact Section */
+#contact p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+#contact a {
+    color: #007bff;
+    text-decoration: none;
 }
 
 /* Footer */
 footer {
-    background-color: #1a1a1a;
-    color: #f8f8f8;
+    background-color: #333;
+    color: #ffffff;
     text-align: center;
-    padding: 60px 0;
-    font-family: 'Futura', sans-serif;
+    padding: 20px 0;
 }
 
 footer p {
-    margin-bottom: 30px;
-}
-
-.social-icons {
-    margin-top: 30px;
-}
-
-.social-icons a {
-    color: #f8f8f8;
-    font-size: 1.8em;
-    margin: 0 15px;
-    transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-    color: #b8860b;
-}
-
-.button {
-    display: inline-block;
-    padding: 15px 40px;
-    background-color: #b8860b;
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Futura', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: background-color 0.3s ease;
-    border: 1px solid #b8860b;
-}
-
-.button:hover {
-    background-color: transparent;
-    color: #b8860b;
-}
-
-/* Responsive Design */
-@media (max-width: 1200px) {
-    .banner h1 {
-        font-size: 4.5em;
-    }
-    .banner p {
-        font-size: 1.8em;
-    }
-    section {
-        padding: 100px 20px;
-    }
-}
-
-@media (max-width: 992px) {
-    .banner {
-        height: 600px;
-        padding: 150px 20px;
-    }
-    .banner h1 {
-        font-size: 4em;
-    }
-    .banner p {
-        font-size: 1.6em;
-    }
-    nav ul li {
-        margin: 0 20px;
-    }
-    section h2 {
-        font-size: 3em;
-    }
-}
-
-@media (max-width: 768px) {
-    .banner {
-        height: 500px;
-        padding: 100px 20px;
-    }
-    .banner h1 {
-        font-size: 3.5em;
-    }
-    .banner p {
-        font-size: 1.4em;
-    }
-    nav {
-        padding: 15px 0;
-    }
-    nav ul {
-        flex-direction: column;
-    }
-    nav ul li {
-        margin: 10px 0;
-    }
-    section {
-        padding: 80px 20px;
-    }
-    section h2 {
-        font-size: 2.8em;
-    }
-    section p {
-        font-size: 1.2em;
-        line-height: 1.8;
-    }
-}
-
-@media (max-width: 576px) {
-    .banner {
-        height: 400px;
-        padding: 80px 15px;
-    }
-    .banner h1 {
-        font-size: 3em;
-    }
-    .banner p {
-        font-size: 1.2em;
-    }
-    section {
-        padding: 60px 15px;
-    }
-    section h2 {
-        font-size: 2.5em;
-    }
-    section p {
-        font-size: 1.1em;
-        line-height: 1.7;
-    }
-    .button {
-        padding: 12px 30px;
-        font-size: 0.9em;
-    }
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
