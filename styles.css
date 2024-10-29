@@ -378,3 +378,11 @@ img {
     opacity: 1;
     transform: translateX(0);
 }
+.tab-content {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tab-content.visible {
+    opacity: 1;
+}
