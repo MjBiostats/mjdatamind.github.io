@@ -1,498 +1,251 @@
-/* Advanced Modern Variables */
-:root {
-    --primary-dark: #0a192f;
-    --primary-light: #00f4ff;
-    --secondary-light: #64ffda;
-    --accent-purple: #bd34fe;
-    --text-primary: #e6f1ff;
-    --text-secondary: #8892b0;
-    --gradient-1: linear-gradient(120deg, rgba(0,244,255,0.1) 0%, rgba(189,52,254,0.1) 100%);
-    --gradient-2: linear-gradient(45deg, rgba(0,244,255,0.05) 0%, transparent 100%);
-    --gradient-text: linear-gradient(120deg, #00f4ff, #bd34fe);
-    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJ Biostat's Portfolio | AI & Healthcare Innovation</title>
+    
+    <!-- Enhanced Meta Tags -->
+    <meta name="description" content="MJ Biostats - Advanced AI-driven clinical research and healthcare innovation portfolio">
+    <meta name="keywords" content="biostatistics, AI, healthcare innovation, clinical research, data science">
+    <meta name="theme-color" content="#0a192f">
+    
+    <!-- Modern Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Your existing stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom cursor elements -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    
+    <!-- Scroll progress bar -->
+    <div class="progress-bar"></div>
+    
+    <header>
+        <div class="banner">
+            <h1>
+                <span class="glitch-text" data-text="MJBIOSTATS">MJBIOSTATS</span>
+            </h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
 
-/* Enhanced Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    cursor: none;
-}
+    <main>
+        <section class="intro">
+            <div class="intro-left">
+                <p class="animated-text">BIOSTATISTICS & DATA SCIENCE</p>
+                <p class="animated-text">ADVANCING AI-DRIVEN</p>
+                <p class="animated-text">CLINICAL RESEARCH</p>
+                <p class="animated-text">&</p>
+                <p class="animated-text">HEALTHCARE INNOVATION</p>
+                
+                <div class="scroll-indicator">
+                    <span>Scroll to explore</span>
+                    <div class="scroll-arrow"></div>
+                </div>
+            </div>
+            
+            <div class="intro-right">
+                <div class="image-collage">
+                    <div class="image-wrapper" data-tilt>
+                        <img src="img1.jpg" alt="Healthcare Analytics Visualization" class="parallax-image">
+                    </div>
+                    <div class="image-wrapper" data-tilt>
+                        <img src="img2.jpg" alt="Medical Research Data" class="parallax-image">
+                    </div>
+                    <div class="image-wrapper" data-tilt>
+                        <img src="img4.jpg" alt="AI Healthcare Innovation" class="parallax-image">
+                    </div>
+                    <div class="image-wrapper" data-tilt>
+                        <img src="img5.jpg" alt="Clinical Research Technology" class="parallax-image">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-/* Custom Cursor */
-.cursor-dot,
-.cursor-outline {
-    pointer-events: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: 9999;
-    transition: opacity 0.3s ease;
-}
+        <section id="about" class="section-wrapper">
+            <div class="section-content">
+                <h2 class="reveal-text">ABOUT</h2>
+                <div class="about-content">
+                    <p class="reveal-text">I am an analytical research professional specializing in biostatistics and predictive modeling, with a focus on leveraging predictive analytics to enhance clinical trial methodologies and public health outcomes.</p>
+                    
+                    <p class="reveal-text">My interdisciplinary background in social sciences and Clinical Research Coordinator (CRC) training at UCSF allows me to integrate innovative approaches into my work. Currently advancing my studies in Biostatistics and artificial intelligence. My goal is to collaborate on projects that promote health equity and address mental health disparities.</p>
+                    
+                    <p class="reveal-text">I welcome connections with those who value precision, insight, and forward-thinking in healthcare. Let's collaborate where shared purpose meets innovation.</p>
+                </div>
+                
+                <div class="skills-container">
+                    <h3 class="reveal-text">CORE COMPETENCIES</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <span class="skill-label">AI & Machine Learning</span>
+                            <div class="skill-bar" data-level="90"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-label">Biostatistics</span>
+                            <div class="skill-bar" data-level="95"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-label">Clinical Research</span>
+                            <div class="skill-bar" data-level="85"></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-label">Data Science</span>
+                            <div class="skill-bar" data-level="92"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-.cursor-dot {
-    width: 8px;
-    height: 8px;
-    background-color: var(--primary-light);
-}
+        <section id="projects" class="section-wrapper">
+            <div class="section-content">
+                <h2 class="reveal-text">PROJECTS</h2>
+                <div class="projects-grid">
+                    <!-- Project cards will be dynamically loaded -->
+                </div>
+                <div class="see-more-container">
+                    <div class="see-more-box">
+                        <span>SEE MORE</span>
+                        <div class="button-glow"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Dynamic background elements -->
+            <div class="bg-grid"></div>
+            <div class="bg-sphere"></div>
+        </section>
 
-.cursor-outline {
-    width: 40px;
-    height: 40px;
-    border: 2px solid var(--primary-light);
-    transition: all 0.2s ease-out;
-}
+        <section id="contact" class="section-wrapper">
+            <div class="section-content">
+                <h2 class="reveal-text">CONTACT</h2>
+                <div class="contact-content">
+                    <div class="contact-item">
+                        <span class="contact-label">EMAIL</span>
+                        <a href="mailto:mary.jacobs@ucsf.edu" class="contact-link">
+                            mary [dot] jacobs [at] ucsf [dot] edu
+                            <div class="link-hover-effect"></div>
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">GITHUB</span>
+                        <a href="https://github.com/MJBiostats" target="_blank" class="contact-link">
+                            MJBiostats
+                            <div class="link-hover-effect"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-/* Scroll Progress Bar */
-.progress-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(to right, var(--primary-light), var(--accent-purple));
-    transform-origin: 0%;
-    z-index: 1001;
-}
+    <footer>
+        <p>&copy; 2024 MJ Biostats | Innovating Healthcare Through Data</p>
+    </footer>
 
-body {
-    font-family: 'Space Grotesk', sans-serif;
-    background-color: var(--primary-dark);
-    color: var(--text-primary);
-    line-height: 1.6;
-    overflow-x: hidden;
-}
+    <!-- Custom JavaScript -->
+    <script>
+        // Initialize GSAP ScrollTrigger
+        gsap.registerPlugin(ScrollTrigger);
 
-/* Enhanced Banner */
-.banner {
-    background: rgba(10, 25, 47, 0.95);
-    backdrop-filter: blur(10px);
-    padding: 1.5rem;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 30px rgba(0, 244, 255, 0.1);
-}
+        // Reveal animations for text elements
+        document.querySelectorAll('.reveal-text').forEach(text => {
+            gsap.from(text, {
+                scrollTrigger: {
+                    trigger: text,
+                    start: "top 80%",
+                    toggleActions: "play none none reverse"
+                },
+                opacity: 0,
+                y: 50,
+                duration: 1
+            });
+        });
 
-.banner h1 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 2.4rem;
-    letter-spacing: 4px;
-    background: var(--gradient-text);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-align: center;
-    position: relative;
-    animation: glowText 3s ease-in-out infinite alternate;
-}
+        // Skill bars animation
+        document.querySelectorAll('.skill-bar').forEach(bar => {
+            const level = bar.getAttribute('data-level');
+            gsap.to(bar, {
+                scrollTrigger: {
+                    trigger: bar,
+                    start: "top 80%",
+                    toggleActions: "play none none reverse"
+                },
+                width: `${level}%`,
+                duration: 1.5,
+                ease: "power2.out"
+            });
+        });
 
-/* Enhanced Navigation */
-nav {
-    background-color: transparent;
-    padding: 1rem 0;
-    border-bottom: 1px solid rgba(0, 244, 255, 0.1);
-}
+        // Parallax effect for images
+        document.querySelectorAll('.parallax-image').forEach(img => {
+            gsap.to(img, {
+                scrollTrigger: {
+                    trigger: img,
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: 1
+                },
+                y: -50
+            });
+        });
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 2.5rem;
-}
+        // Custom cursor
+        const cursor = {
+            dot: document.querySelector('.cursor-dot'),
+            outline: document.querySelector('.cursor-outline'),
+            update: function(e) {
+                this.dot.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+                this.outline.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+            }
+        };
 
-nav ul li a {
-    font-family: 'Roboto Mono', monospace;
-    color: var(--text-primary);
-    text-decoration: none;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-    padding: 0.5rem 1rem;
-    position: relative;
-    transition: var(--transition);
-}
+        document.addEventListener('mousemove', e => cursor.update(e));
 
-nav ul li a::before,
-nav ul li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background: var(--primary-light);
-    transition: var(--transition);
-}
+        // Interactive elements cursor effect
+        document.querySelectorAll('a, button, .see-more-box').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.outline.style.transform = 'scale(1.5)';
+                cursor.outline.style.border = '2px solid var(--primary-light)';
+            });
+            
+            el.addEventListener('mouseleave', () => {
+                cursor.outline.style.transform = 'scale(1)';
+                cursor.outline.style.border = '2px solid var(--primary-light)';
+            });
+        });
 
-nav ul li a::before {
-    left: 0;
-    top: 0;
-}
+        // Scroll progress indicator
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            const max = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = (scrolled / max) * 100;
+            document.querySelector('.progress-bar').style.transform = `scaleX(${progress / 100})`;
+        });
 
-nav ul li a::after {
-    right: 0;
-    bottom: 0;
-}
-
-nav ul li a:hover {
-    color: var(--primary-light);
-    text-shadow: 0 0 8px rgba(0, 244, 255, 0.5);
-}
-
-nav ul li a:hover::before,
-nav ul li a:hover::after {
-    width: 100%;
-}
-
-/* Enhanced Intro Section */
-.intro {
-    padding: 8rem 5rem 5rem;
-    background: var(--gradient-2);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    gap: 4rem;
-    position: relative;
-}
-
-.intro::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at 50% 50%, rgba(0, 244, 255, 0.1), transparent 70%);
-    pointer-events: none;
-}
-
-.intro-left {
-    flex: 1;
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.2;
-}
-
-.intro-left p {
-    margin-bottom: 1rem;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeUp 0.5s ease forwards;
-    position: relative;
-    display: inline-block;
-}
-
-.intro-left p::before {
-    content: '>';
-    position: absolute;
-    left: -2rem;
-    color: var(--primary-light);
-    opacity: 0.5;
-}
-
-/* Enhanced Image Effects */
-.image-collage {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    perspective: 1000px;
-}
-
-.image-left, .image-right {
-    transform-style: preserve-3d;
-}
-
-.image-left img, .image-right img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-    border: 2px solid rgba(0, 244, 255, 0.2);
-    transition: var(--transition);
-    filter: grayscale(20%) brightness(90%);
-    transform: translateZ(0);
-}
-
-.image-left img:hover, .image-right img:hover {
-    transform: translateY(-10px) translateZ(20px);
-    border-color: var(--primary-light);
-    filter: grayscale(0%) brightness(100%);
-    box-shadow: 
-        0 10px 30px rgba(0, 244, 255, 0.2),
-        0 0 0 1px rgba(0, 244, 255, 0.1);
-}
-
-/* Enhanced About Section */
-#about {
-    padding: 6rem 5rem;
-    background: var(--gradient-1);
-    position: relative;
-}
-
-#about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: var(--primary-light);
-    position: relative;
-    display: inline-block;
-}
-
-#about h2::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 60%;
-    height: 3px;
-    background: linear-gradient(to right, var(--primary-light), var(--accent-purple));
-}
-
-#about p {
-    max-width: 800px;
-    margin-bottom: 1.5rem;
-    color: var(--text-secondary);
-    font-size: 1.1rem;
-    line-height: 1.8;
-    position: relative;
-    padding-left: 1rem;
-}
-
-#about p::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(to bottom, var(--primary-light), transparent);
-}
-
-/* Enhanced Projects Section */
-#projects {
-    padding: 6rem 5rem;
-    background-blend-mode: overlay;
-    background-color: rgba(10, 25, 47, 0.9);
-    position: relative;
-    overflow: hidden;
-}
-
-#projects::before,
-#projects::after {
-    content: '';
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    filter: blur(100px);
-}
-
-#projects::before {
-    top: -100px;
-    right: -100px;
-    background: rgba(0, 244, 255, 0.1);
-}
-
-#projects::after {
-    bottom: -100px;
-    left: -100px;
-    background: rgba(189, 52, 254, 0.1);
-}
-
-/* Enhanced Button */
-.see-more-box {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background: transparent;
-    border: 2px solid var(--primary-light);
-    color: var(--primary-light);
-    font-family: 'Roboto Mono', monospace;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: var(--transition);
-}
-
-.see-more-box:hover {
-    color: var(--primary-dark);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(0, 244, 255, 0.3);
-}
-
-.see-more-box::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(120deg, transparent, var(--primary-light), transparent);
-    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: -1;
-}
-
-.see-more-box:hover::before {
-    transform: translateX(100%);
-}
-
-/* Enhanced Contact Section */
-#contact {
-    padding: 6rem 5rem;
-    background: var(--gradient-1);
-    text-align: center;
-    position: relative;
-}
-
-#contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    background: var(--gradient-text);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
-#contact a {
-    color: var(--primary-light);
-    text-decoration: none;
-    font-family: 'Roboto Mono', monospace;
-    transition: var(--transition);
-    position: relative;
-    padding: 0.5rem 1rem;
-}
-
-#contact a:hover {
-    color: var(--secondary-light);
-    text-shadow: 0 0 8px rgba(100, 255, 218, 0.5);
-}
-
-#contact a::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(to right, var(--primary-light), var(--accent-purple));
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s ease;
-}
-
-#contact a:hover::before {
-    transform: scaleX(1);
-    transform-origin: left;
-}
-
-/* Enhanced Footer */
-footer {
-    background: rgba(10, 25, 47, 0.95);
-    color: var(--text-secondary);
-    padding: 2rem;
-    text-align: center;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 0.9rem;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Advanced Animations */
-@keyframes glowText {
-    0% {
-        text-shadow: 0 0 10px rgba(0, 244, 255, 0.5);
-    }
-    100% {
-        text-shadow: 0 0 20px rgba(189, 52, 254, 0.5);
-    }
-}
-
-@keyframes fadeUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Add this JavaScript to your HTML */
-const script = document.createElement('script');
-script.textContent = `
-    // Custom cursor
-    const cursorDot = document.createElement('div');
-    const cursorOutline = document.createElement('div');
-    cursorDot.className = 'cursor-dot';
-    cursorOutline.className = 'cursor-outline';
-    document.body.appendChild(cursorDot);
-    document.body.appendChild(cursorOutline);
-
-    document.addEventListener('mousemove', (e) => {
-        cursorDot.style.transform = \`translate(\${e.clientX}px, \${e.clientY}px)\`;
-        cursorOutline.style.transform = \`translate(\${e.clientX}px, \${e.clientY}px)\`;
-    });
-
-    // Progress bar
-    const progressBar = document.createElement('div');
-    progressBar.className = 'progress-bar';
-    document.body.appendChild(progressBar);
-
-    window.addEventListener('scroll', () => {
-        const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-        progressBar.style.transform = \`scaleX(\${scrollPercentage / 100})\`;
-    });
-`;
-document.head.appendChild(script);
-
-/* Enhanced Media Queries */
-@media (max-width: 768px) {
-    .intro {
-        flex-direction: column;
-        padding: 6rem 2rem 2rem;
-    }
-
-    .intro-left {
-        font-size: 2rem;
-    }
-
-    .image-collage {
-        margin-top: 2rem;
-    }
-
-    #about, #projects, #contact {
-        padding: 4rem 2rem;
-    }
-
-    .cursor-dot, .cursor-outline {
-        display: none;
-    }
-}
-
-@media (max-width: 480px) {
-    .banner h1 {
-        font-size: 1.8rem;
-    }
-
-    nav ul {
-        gap: 1rem;
-    }
-
-    .intro-left {
-        font-size: 1.5rem;
-    }
-}
-
-/* Dark Mode Animation */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --primary-dark: #0a192f;
-    }
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
+        // Navigation smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
