@@ -3,67 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MJ Biostat's Github Page</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Aptos:wght@400;600&display=swap" rel="stylesheet">
+    <title>MJ Biostat | Sophisticated Healthcare Innovation</title>
+    
+    <!-- Premium Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-line"></div>
+        <div class="loader-logo">MJ</div>
+    </div>
+
+    <!-- Navigation -->
     <header>
-        <div class="banner">
-            <h1>MJBIOSTATS</h1>
-        </div>
         <nav>
-            <ul>
-                <li><a href="#ABOUT">ABOUT</a></li>
-                <li><a href="#PROJECTS">PROJECTS</a></li>
-                <li><a href="#CONTACT">CONTACT</a></li>
+            <a href="#intro" class="logo">MJ BIOSTAT</a>
+            <ul class="nav-links">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="intro">
-        <div class="intro-left">
-            <p>BIOSTATISTICS & DATA SCIENCE </p>
-            <p>ADVANCING AI-DRIVEN </p>
-            <p>CLINICAL RESEARCH </p>
-            <p>& </p>
-            <p>HEALTHCARE INNOVATION </p>
-        </div>
-        <div class="intro-right">
-            <div class="image-collage">
-                <div class="image-left">
-                    <img src="img1.jpg" alt="Image 1">
-                    <img src="img2.jpg" alt="Image 2">
-                </div>
-                <div class="image-right">
-                    <img src="img4.jpg" alt="Image 4">
-                    <img src="img5.jpg" alt="Image 5">
+    <!-- Main Content -->
+    <main>
+        <section id="intro">
+            <div class="section-content">
+                <div class="intro-text reveal">
+                    <h1>Advancing Healthcare Through Sophisticated Innovation</h1>
+                    <p>Pioneering the intersection of biostatistics, artificial intelligence, and clinical research.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="about">
-        <h2>ABOUT</h2>
-        <p>I am an analytical research professional specializing in biostatistics and predictive modeling, with a focus on leveraging predictive analytics to enhance clinical trial methodologies and public health outcomes. </p>
-        <p></p>My interdisciplinary background in social sciences and Clinical Research Coordinator (CRC) training at UCSF allows me to integrate innovative approaches into my work. Currently advancing my studies in Biostatistics and artificial intelligence. My goal is to collaborate on projects that promote health equity and address mental health disparities.</p>
-        <p>I welcome connections with those who value precision, insight, and forward-thinking in healthcare. Let’s collaborate where shared purpose meets innovation.</p>
-    </section>
+        <section id="about">
+            <div class="section-content">
+                <div class="about-content">
+                    <div class="about-text reveal">
+                        <h2>The Art of Innovation</h2>
+                        <p>As an analytical research professional, I specialize in biostatistics and predictive modeling, elevating clinical trial methodologies and public health outcomes to new heights of excellence.</p>
+                        <p>My interdisciplinary background combines social sciences with Clinical Research Coordinator training at UCSF, enabling innovative approaches in healthcare advancement.</p>
+                    </div>
+                    <div class="about-image reveal">
+                        <img src="img1.jpg" alt="Healthcare Innovation" style="object-position: center;">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="projects" style="background-image: url('img6.jpg'); background-size: cover; background-position: center;">
-    <h2>PROJECTS</h2>
-    <p class="see-more-box">SEE MORE</p>
-    </section>
+        <section id="projects">
+            <div class="section-content">
+                <div class="projects-grid">
+                    <div class="project-card reveal">
+                        <img src="img2.jpg" alt="Project 1">
+                    </div>
+                    <div class="project-card reveal">
+                        <img src="img4.jpg" alt="Project 2">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>CONTACT</h2>
-        <p>EMAIL   <a href="mailto:mary.jacobs@ucsf.edu">mary [dot] jacobs [at] ucsf [dot] edu</a><br>
-           GITHUB  <a href="https://github.com/MJBiostats" target="_blank">MJBiostats</a><br>
-        </p>
-    </section>
+        <section id="contact">
+            <div class="section-content">
+                <div class="contact-content reveal">
+                    <h2>Connect</h2>
+                    <div class="contact-links">
+                        <a href="mailto:mary.jacobs@ucsf.edu">mary [dot] jacobs [at] ucsf [dot] edu</a>
+                        <a href="https://github.com/MJBiostats" target="_blank">github.com/MJBiostats</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <footer>
-        <p>&copy; 2024 MJ Biostats</p>
-    </footer>
+    <script>
+        // Initialize GSAP
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Custom Cursor
+        const cursor = document.querySelector('.cursor');
+        const follower = document.querySelector('.cursor-follower');
+        
+        document.addEventListener('mousemove', (e) => {
+            gsap.to(cursor, {
+                x: e.clientX,
+                y: e.clientY,
+                duration: 0.2
+            });
+            
+            gsap.to(follower, {
+                x: e.clientX,
+                y: e.clientY,
+                duration: 0.1
+            });
+        });
+
+        // Hover effect on links
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                cursor.style.transform = 'scale(1.5)';
+                follower.style.transform = 'scale(0.5)';
+            });
+            
+            link.addEventListener('mouseleave', () => {
+                cursor.style.transform = 'scale(1)';
+                follower.style.transform = 'scale(1)';
+            });
+        });
+
+        // Loader
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.querySelector('.loader').style.opacity = '0';
+                document.querySelector('.loader').style.transition = 'opacity 0.5s ease';
+                setTimeout(() => {
+                    document.querySelector('.loader').style.display = 'none';
+                }, 500);
+            }, 2000);
+        });
+
+        // Reveal animations
+        const reveals = document.querySelectorAll('.reveal');
+
+        function reveal() {
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', reveal);
+        reveal(); // Initial check
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // GSAP Animations
+        gsap.from('.intro-text h1', {
+            duration: 1.5,
+            y: 100,
+            opacity: 0,
+            ease: 'power4.out',
+            delay: 2.5
+        });
+
+        gsap.from('.intro-text p', {
+            duration: 1.5,
+            y: 50,
+            opacity: 0,
+            ease: 'power4.out',
+            delay: 2.7
+        });
+    </script>
 </body>
 </html>
